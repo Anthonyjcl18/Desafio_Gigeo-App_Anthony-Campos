@@ -1,0 +1,27 @@
+.main {
+    &__title {
+        justify-content: flex-start;
+        h2 {
+            font-size: $font-size-xx-large;
+            font-family: $secondary-font;
+            font-weight: bold;
+            margin: 1.875rem 0.625rem;
+        }
+        @include respond-to($bp-min-laptop) {
+            text-align: center;
+        }
+    }
+    &__preview {
+        margin-bottom: 0.825rem;
+    }
+    &__name {
+        font-size: $font-size-x-large;
+        font-family: $primary-font;
+        font-weight: $primary-font-maxbold;
+        margin-bottom: 0.625rem;
+    }
+    &__view {
+        font-family: $secondary-font;
+        color: $gray;
+    }
+}
