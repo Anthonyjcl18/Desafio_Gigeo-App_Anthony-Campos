@@ -1,0 +1,16 @@
+//abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+//vendors
+@import "vendors/bootstrap4.6/bootstrap";
+//base
+@import "base/reset";
+@import "base/typography";
+//layout
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/mainp";
+//components
+@import "components/buttons";
+//pages
+//themes
