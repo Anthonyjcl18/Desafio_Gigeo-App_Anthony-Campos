@@ -9941,5 +9941,114 @@ h3 {
 
 /* Font Order */
 /* Font Size */
+.navbar {
+  height: 8rem;
+  background-color: #FFF;
+  justify-content: space-between;
+}
+.navbar__name {
+  color: #001614 !important;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 2.75rem;
+  padding-left: 1.25rem;
+}
+.navbar__name span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .navbar__name {
+    padding-left: 70px;
+  }
+}
+.navbar__menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.navbar__menuList {
+  flex-direction: row;
+}
+.navbar__menuList:last-child {
+  margin-right: 5rem;
+}
+.navbar__link {
+  margin-left: 1rem;
+  color: #001614 !important;
+  font-size: 13px;
+}
+.navbar__last {
+  color: #888;
+}
+.navbar__menuBurger {
+  padding: 20px 20px;
+}
+@media (min-width: 768px) {
+  .navbar__menuBurger {
+    display: none;
+  }
+}
+.navbar__input {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.navbar__burger {
+  background-color: #888;
+  display: block;
+  width: 32px;
+  height: 4px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+.navbar .burger1 {
+  color: #888 !important;
+  -webkit-transform-origin: 10% 0%;
+  transform-origin: 10% 0%;
+  margin-bottom: 5px;
+}
+.navbar .burger2 {
+  color: #888 !important;
+  margin-bottom: 5px;
+}
+.navbar .burger3 {
+  color: #888 !important;
+  -webkit-transform-origin: 10% 100%;
+  transform-origin: 10% 100%;
+}
+.navbar__input:checked ~ ul {
+  width: 100%;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+.navbar__input:checked ~ label .burger1 {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+.navbar__input:checked ~ label .burger2 {
+  opacity: 0;
+}
+.navbar__input:checked ~ label .burger3 {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #000000;
+}
 
 /*# sourceMappingURL=style.css.map */
