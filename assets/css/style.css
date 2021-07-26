@@ -9933,5 +9933,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font Order */
+/* Font Size */
 
 /*# sourceMappingURL=style.css.map */
